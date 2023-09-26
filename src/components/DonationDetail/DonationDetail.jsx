@@ -1,26 +1,29 @@
-import { useLoaderData, useNavigate } from "react-router-dom";
+import { useLoaderData, useNavigate, useParams } from "react-router-dom";
 
 const DonationDetail = () => {
 
-    const donation = useLoaderData();
+    const donations = useLoaderData();
+    const {id} = useParams();
+    const idInt = parseInt(id);
+    const donation = donations.find(donation => donation.id === idInt);
+    // console.log(id);
+    console.log(donation);
     
+    // const navigate = useNavigate();
 
-    const navigate = useNavigate();
+    // const{id, title, price} = donation;
+    // console.log({id})
 
-    const{id, title, price} = donation;
-    console.log({id})
-
-    const handleGoBack = () => {
-        navigate(-1);
-    }
+    // const handleGoBack = () => {
+    //     navigate(-1);
+    // }
 
     return (
         <div>
-            <h1>Donation detail</h1>
-            <h2>length: 
-            </h2>
-            {id}{title}{price}
-            <button onClick={handleGoBack}>Go back</button>
+            {/* <button onClick={handleGoBack}>Go back</button> */}
+            <div className="grid grid-cols-4">
+                    {donation.title}
+            </div>
         </div>
     );
 };

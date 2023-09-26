@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import Donation from "../Donation/Donation";
+import './Home.css';
 
 const Home = () => {
 
@@ -12,7 +13,7 @@ const Home = () => {
     return (
         <div>
             
-            <div className="bottle-container">
+            <div className="donation-container">
                 {
                     donations.map(donation => <Donation
                         key={donation.id}

@@ -22,8 +22,8 @@ const router = createBrowserRouter([
         element: <Home></Home>,
       },
       {
-        path: '/:donationId',
-        loader: ({params}) => fetch(`donations.json/${params.donationId}`),
+        path: '/:id',
+        loader: () => fetch(`../donations.json`),
         // loader: ({params}) => fetch(`https://jsonplaceholder.typicode.com/users/${params.donationId}`),
         element: <DonationDetail></DonationDetail>
       },
