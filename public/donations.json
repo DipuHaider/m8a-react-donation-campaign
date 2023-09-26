@@ -8,7 +8,7 @@
         "card_bg": "#0052FF26",
         "text_button_bg": "#0052FF",
         "description": "Dedicated to ensuring every child has access to safe and clean drinking water, the 'Clean Water for Children' app connects users with charitable organizations and projects worldwide. It allows them to contribute to water purification efforts, well construction, and sanitation projects. Join us in making a difference by providing a vital resource that empowers children and communities for a brighter future.",
-        "Price": "$180.00"
+        "price": "$180.00"
     },
     {
         "id": 2,
@@ -19,7 +19,7 @@
         "card_bg": "#FF444A26",
         "text_button_bg": "#FF444A",
         "description": "Empower children through education with the 'Good Education' app. Make a positive impact by supporting educational initiatives worldwide. Your contributions help improve access to quality education and shape future leaders.",
-        "Price": "$250.00"
+        "price": "$250.00"
     },
     {
         "id": 3,
@@ -30,7 +30,7 @@
         "card_bg": "#79C23F26",
         "text_button_bg": "#79C23F",
         "description": "Support the 'Used Clothing Drive' app to provide clothing for those in need. Your contributions make a difference by helping individuals stay warm and comfortable. Together, we can foster a sense of community and care.",
-        "Price": "$270.00"
+        "price": "$270.00"
     },
     {
         "id": 4,
@@ -41,7 +41,7 @@
         "card_bg": "#F8714726",
         "text_button_bg": "#F87147",
         "description": "Support global food initiatives with the 'Better Food for Everyone' app. Your contributions help ensure that nutritious meals reach those in need. Let's work together to combat hunger and promote well-being.",
-        "Price": "$220.00"
+        "price": "$220.00"
     },  
     {
         "id": 5,
@@ -52,7 +52,7 @@
         "card_bg": "#F8714726",
         "text_button_bg": "#F87147",
         "description": "Join 'Nourishing Communities' to make a difference in the world of food security. Your contributions help alleviate hunger and promote nutrition. Together, we can build healthier, stronger communities.",
-        "Price": "$290.00"
+        "price": "$290.00"
     },
     {
         "id": 6,
@@ -63,7 +63,7 @@
         "card_bg": "#79C23F26",
         "text_button_bg": "#79C23F",
         "description": "Support the 'Dress for Less' app to provide affordable clothing options. Your contributions help individuals access stylish and affordable clothing, promoting self-confidence and self-expression.",
-        "Price": "$180.00"
+        "price": "$180.00"
     },
     {
         "id": 7,
@@ -74,7 +74,7 @@
         "card_bg": "#FF444A26",
         "text_button_bg": "#FF444A",
         "description": "Empower students with the 'Classroom to Career' app. Your support bridges the gap between education and employment, shaping bright futures. Together, we can unlock opportunities for the next generation.",
-        "Price": "$250.00"
+        "price": "$250.00"
     },
     {
         "id": 8,
@@ -85,7 +85,7 @@
         "card_bg": "#0052FF26",
         "text_button_bg": "#0052FF",
         "description": "Embrace a healthier lifestyle with the 'Nutrient-Rich Diets' app. We're dedicated to promoting well-being through balanced and nutritious eating. Our app provides you with personalized meal plans, recipes, and expert guidance to help you achieve your health goals.",
-        "Price": "$270.00"
+        "price": "$270.00"
     },
     {
         "id": 9,
@@ -96,7 +96,7 @@
         "card_bg": "#0052FF26",
         "text_button_bg": "#0052FF",
         "description": "Support 'Mental Wellness' to promote mental health awareness and access to resources. Your contributions make a difference by offering support to those in need. Let's break the stigma surrounding mental health.",
-        "Price": "$220.00"
+        "price": "$220.00"
     },
     {
         "id": 10,
@@ -107,7 +107,7 @@
         "card_bg": "#FF444A26",
         "text_button_bg": "#FF444A",
         "description": "Support 'Elevate Learning' to empower students and enhance educational experiences. Your contributions enable access to quality education, shaping future leaders. Together, we can elevate learning opportunities.",
-        "Price": "$290.00"
+        "price": "$290.00"
     },
     {
         "id": 11,
@@ -118,7 +118,7 @@
         "card_bg": "#79C23F26",
         "text_button_bg": "#79C23F",
         "description": "Contribute to 'Closet Cleanout' and declutter your life while helping others access affordable clothing. Your donations promote sustainability and community well-being.",
-        "Price": "$180.00"
+        "price": "$180.00"
     },
     {
         "id": 12,
@@ -129,6 +129,6 @@
         "card_bg": "#F8714726",
         "text_button_bg": "#F87147",
         "description": "Support 'Culinary Equality' to address food disparities and promote equitable access to nutritious meals. Your contributions can help eliminate hunger and create a more just food system.",
-        "Price": "$250.00"
+        "price": "$250.00"
     }
 ]
