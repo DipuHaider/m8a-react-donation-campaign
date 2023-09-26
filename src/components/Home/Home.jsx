@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import Donation from "../Donation/Donation";
 import './Home.css';
+import Banner from "../Banner/Banner";
 
 const Home = () => {
 
@@ -12,7 +13,7 @@ const Home = () => {
 
     return (
         <div>
-            
+            <Banner></Banner>
             <div className="donation-container">
                 {
                     donations.map(donation => <Donation
