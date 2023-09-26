@@ -6,12 +6,6 @@ const Donation = ({donation}) => {
 
     // const navigate = useNavigate();
 
-    const donationStyle = {
-        // border: '2px solid yellow',
-        // padding: '10px',
-        borderRadius: '20px',
-        
-    }
      const cardBg = {
         backgroundColor: card_bg,
      }
@@ -29,18 +23,18 @@ const Donation = ({donation}) => {
     // }
 
     return (
-        <div style={donationStyle}>
+        <div>
             <Link to={`/${id}`}>
             {/* <Link to={`/${id}`}><button>donationDetailsButton</button></Link> */}
             {/* <button onClick={handleShowDonation}>Click to see details</button> */}
-                <div style={cardBg} className="card w-96 border-none  p-0">
+                <div style={cardBg} className="card border-none p-0 rounded-lg">
                 {/* <div className="card w-96 border-none bg-slate-600 p-0"> */}
                     <figure className="">
-                        <img src={picture} alt="Shoes" className="rounded-b-none" />
+                        <img src={picture} alt={title} className="rounded-b-none" />
                     </figure>
-                    <div className="card-body text-left">
-                        <button style={customButtonColor} className="btn btn-sm">{category}</button>
-                        <h2 style={titleColor} className="card-title">{title}</h2>
+                    <div className="text-left p-4 justify-start space-y-2">
+                        <button style={customButtonColor} className="btn btn-xs border-none">{category}</button>
+                        <h2 style={titleColor} className="font-semibold text-xl">{title}</h2>
                     </div>
                 </div>
             </Link>

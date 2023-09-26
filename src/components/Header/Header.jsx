@@ -3,8 +3,8 @@ import './Header.css'
 
 const Header = () => {
     return (
-        <div>
-            <div className="navbar bg-base-100">
+        <div className="header-container">
+            <div className="navbar">
                 <div className="flex-1">
                     <img src="../../../public/Logo.png" alt="" />
                 </div>

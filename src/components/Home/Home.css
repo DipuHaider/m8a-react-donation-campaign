@@ -1,5 +1,15 @@
+/* .home-container{
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 2rem 2rem 2rem;
+    text-align: center;
+} */
 .donation-container{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 15px;
+    gap: 24px;
+    padding: 100px 0;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 2rem;
 }
