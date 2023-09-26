@@ -8,14 +8,28 @@ import './index.css';
 import Home from './components/Home/Home';
 import Donations from './components/Donations/Donations';
 import Statistics from './components/Statistics/Statistics';
+import DonationDetail from './components/DonationDetail/DonationDetail';
+import MainLayout from './components/MainLayout/MainLayout';
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <Home></Home>,
+    element: <MainLayout></MainLayout>,
     children: [
       {
+        path: '/',
+        // loader: ()=> fetch('https://jsonplaceholder.typicode.com/users'),
+        element: <Home></Home>,
+      },
+      {
+        path: '/:donationId',
+        loader: ({params}) => fetch(`donations.json/${params.donationId}`),
+        // loader: ({params}) => fetch(`https://jsonplaceholder.typicode.com/users/${params.donationId}`),
+        element: <DonationDetail></DonationDetail>
+      },
+      {
         path: '/donations',
+        // loader: ()=> fetch('https://jsonplaceholder.typicode.com/users'),
         element: <Donations></Donations>,
       },
       {
