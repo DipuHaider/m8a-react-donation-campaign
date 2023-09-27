@@ -17,7 +17,7 @@ const DonationDetail = () => {
     }
 
     const handleDonation = () => {
-        saveDonation(id);
+        saveDonation(idInt);
         toast("Donation added successfully.!!!");
     }
 

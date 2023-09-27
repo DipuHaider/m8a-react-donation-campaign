@@ -18,19 +18,18 @@ const router = createBrowserRouter([
     children: [
       {
         path: '/',
-        // loader: ()=> fetch('https://jsonplaceholder.typicode.com/users'),
         element: <Home></Home>,
       },
       {
         path: '/:id',
+        element: <DonationDetail></DonationDetail>,
         loader: () => fetch(`../donations.json`),
-        // loader: ({params}) => fetch(`https://jsonplaceholder.typicode.com/users/${params.donationId}`),
-        element: <DonationDetail></DonationDetail>
+        
       },
       {
         path: '/donations',
-        // loader: ()=> fetch('https://jsonplaceholder.typicode.com/users'),
         element: <Donations></Donations>,
+        loader: () => fetch(`../donations.json`),
       },
       {
         path: '/statistics',
