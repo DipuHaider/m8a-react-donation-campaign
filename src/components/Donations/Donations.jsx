@@ -31,7 +31,7 @@ const Donations = () => {
                         
                         <div className="card card-side p-0 border-none" style={{ backgroundColor: donation.card_bg }}>
                         <figure><img src={donation.picture} alt={donation.title} className="h-[205px]"/></figure>
-                            <div className="text-left p-4 justify-start space-y-2">
+                            <div className="text-left p-4 space-y-2">
                                 <button style={{ backgroundColor: donation.card_bg, color: donation.text_button_bg }} className="btn btn-xs border-none">{donation.category}</button>
                                 <h2 className="font-semibold text-xl">{donation.title}</h2>
                                 <h2 style={{color: donation.text_button_bg }}>{donation.price}</h2>

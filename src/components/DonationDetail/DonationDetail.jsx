@@ -2,7 +2,7 @@ import { useLoaderData, useParams, useNavigate } from "react-router-dom";
 import './DonationDetail.css';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-import { saveDonation } from "../../utilities/localstorage";
+import { saveDonation, getStoredDonation } from "../../utilities/localstorage";
 
 
 const DonationDetail = () => {
@@ -15,10 +15,16 @@ const DonationDetail = () => {
     const customButtonColor = {
         backgroundColor: donation.text_button_bg,
     }
-
+    
     const handleDonation = () => {
-        saveDonation(idInt);
-        toast("Donation added successfully.!!!");
+        const storedDonationIds = getStoredDonation();
+        const isExist = storedDonationIds.includes(donation.id);
+        if(isExist){
+            toast("Donated previously!!");
+        } else {
+            saveDonation(idInt);
+            toast("Donation added successfully.!!!");
+        }
     }
 
     const navigate = useNavigate();
