@@ -1,21 +1,7 @@
+import { useEffect, useState } from "react";
 import { PieChart, Pie, Cell, Legend } from 'recharts';
 import './Statistics.css';
 import { getStoredDonation } from "../../utilities/localstorage";
-
-const storedDonationIds = getStoredDonation();
-console.log(storedDonationIds.length)
-
-const yourDonation = storedDonationIds.length ;
-const totalDonation = 12 - yourDonation;
-
-
-
-const data = [
-  { name: 'Total Donation', value: totalDonation },
-  { name: 'Your Donation', value: yourDonation },
-];
-
-const COLORS = ['#FF444A', '#00C49F'];
 
 const customLegendContent = (props) => {
   const { payload } = props;
@@ -33,6 +19,23 @@ const customLegendContent = (props) => {
 };
 
 const Statistics = () => {
+  const [donatedDonations, setDonatedDonations] = useState([]);
+
+  useEffect( () => {
+      const storedDonationIds = getStoredDonation();
+      const donationsDonated = storedDonationIds.length;
+          
+      setDonatedDonations(donationsDonated);
+  }, [])
+
+
+const totalDonation = 12;
+const data = [
+  { name: 'Total Donation', value: totalDonation },
+  { name: 'Your Donation', value: donatedDonations },
+];
+const COLORS = ['#FF444A', '#00C49F'];
+
   const totalValue = data.reduce((acc, entry) => acc + entry.value, 0);
 
   return (
@@ -40,7 +43,6 @@ const Statistics = () => {
       <div className="horizontal-bar">
         {data.map((entry, index) => (
           <div className="bar" key={`bar-${index}`}>
-            {/* <div className="bar-label">{entry.name}</div> */}
             <div className="bar-fill" style={{ width: `${(entry.value / totalValue) * 100}%` }}></div>
           </div>
         ))}
@@ -55,7 +57,7 @@ const Statistics = () => {
             outerRadius={80}
             fill="#8884d8"
             dataKey="value"
-            label={({ cx, cy, midAngle, innerRadius, outerRadius, percent, index }) => {
+            label={({ cx, cy, midAngle, innerRadius, outerRadius, percent}) => {
               const radius = innerRadius + (outerRadius - innerRadius) * 0.5;
               const x = cx + radius * Math.cos(-midAngle * (Math.PI / 180));
               const y = cy + radius * Math.sin(-midAngle * (Math.PI / 180));
