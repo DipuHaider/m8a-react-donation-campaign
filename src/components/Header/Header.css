@@ -12,3 +12,21 @@ nav a.active {
     text-decoration: underline;
     color: #FF444A;
 }
+
+@media only screen and (max-width: 768px) {
+    .header-container{
+        min-width: 90vw;
+        margin: 0 auto;
+        padding: 0 2rem 0 2rem;
+        text-align: center;
+    }
+  }
+
+  @media only screen and (max-width: 90vw) {
+    .header-container{
+        min-width: 410px;
+        margin: 0 auto;
+        padding: 0 .1rem 0 .1rem;
+        text-align: center;
+    }
+  }
