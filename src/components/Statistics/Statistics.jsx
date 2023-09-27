@@ -29,9 +29,9 @@ const Statistics = () => {
   }, [])
 
 
-const totalDonation = 12;
+// const totalDonation = 12;
 const data = [
-  { name: 'Total Donation', value: totalDonation },
+  { name: 'Total Donation', value: 12 },
   { name: 'Your Donation', value: donatedDonations },
 ];
 const COLORS = ['#FF444A', '#00C49F'];

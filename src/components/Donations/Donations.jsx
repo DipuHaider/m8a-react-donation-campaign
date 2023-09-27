@@ -8,6 +8,7 @@ const Donations = () => {
     const donations = useLoaderData();
 
     const [donatedDonations, setDonatedDonations] = useState([]);
+    const [dataLength, setDataLength] = useState([4]);
 
     useEffect( () => {
         const storedDonationIds = getStoredDonation();
@@ -27,7 +28,7 @@ const Donations = () => {
         <div className="donations-container">
             <div className="donations-div">
                 {
-                    donatedDonations.map(donation => <div key={donation.id}>
+                    donatedDonations.slice(0, dataLength).map(donation => <div key={donation.id}>
                         
                         <div className="card card-side p-0 border-none" style={{ backgroundColor: donation.card_bg }}>
                         <figure><img src={donation.picture} alt={donation.title} className="h-[205px]"/></figure>
@@ -40,6 +41,12 @@ const Donations = () => {
                         </div>
                     </div>)
                 }
+                
+            </div>
+            <div className="donationsBtn-div text-center flex justify-center items-center  my-12">
+                <div className={dataLength == donatedDonations.length && 'hidden'}>
+                <button onClick={() => setDataLength(donatedDonations.length)} className="rounded btn btn-sm text-white border-none mt-3 bg-donation-primary w-20">see all</button>
+                </div>
             </div>
         </div>
     );
