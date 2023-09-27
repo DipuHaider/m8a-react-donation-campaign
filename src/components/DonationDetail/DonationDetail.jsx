@@ -1,5 +1,8 @@
 import { useLoaderData, useParams, useNavigate } from "react-router-dom";
 import './DonationDetail.css';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
 
 const DonationDetail = () => {
 
@@ -10,7 +13,9 @@ const DonationDetail = () => {
 
     const customButtonColor = {
         backgroundColor: donation.text_button_bg,
-     }
+    }
+
+    const notify = () => toast("Donation added successfully.!!!");
 
     const navigate = useNavigate();
     const handleGoBack = () => {
@@ -24,7 +29,8 @@ const DonationDetail = () => {
             <div className="flex flex-col mt-32 relative">
                 <img className="rounded-2xl w-full" src={donation.picture} alt={donation.title} />
                 <div className="bg-donation-txt50 min-h-[130px] p-9 rounded-b-2xl absolute left-0 right-0 bottom-0">
-                <button style={customButtonColor} className="rounded btn text-white border-none">Donate {donation.price}</button>
+                    <button onClick={notify} style={customButtonColor} className="rounded btn text-white border-none">Donate {donation.price}</button>
+                    <ToastContainer />
                 </div>
             </div>
             <div className="space-y-4">
