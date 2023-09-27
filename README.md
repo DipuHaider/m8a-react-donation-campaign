@@ -1,8 +1,11 @@
-# React + Vite
+# React + Vite # Tailwind # DaisyUI
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+### Donation Campaign
 
-Currently, two official plugins are available:
+#### Project Description
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Donation Page: We aim to create a user-friendly donation platform that enhances the user experience through intuitive navigation, a captivating banner, and categorized donations. This design ensures that users can easily explore and contribute to causes that resonate with them, promoting active participation.
+
+## Donation Details: Our platform will offer a comprehensive view of each donation, empowering users to delve into the specifics of a particular cause. Here, they can access detailed information about the donation, make contributions, and track their individual donations. This feature provides transparency and encourages continued engagement.
+
+## Donation Statistics: We will develop a statistics page featuring a dynamic pie chart. This visual representation will highlight the collective impact of all users' donations and showcase each user's unique contributions. Users can gain insights into the overall impact they've had on various causes, fostering a sense of accomplishment and community involvement.
