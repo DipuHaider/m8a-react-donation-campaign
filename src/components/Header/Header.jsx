@@ -9,7 +9,7 @@ const Header = () => {
                     {/* Header content */}
                     <div className="navbar">
                         <div className="flex-1">
-                            <img src="Logo.png" alt="" />
+                            <img src="https://i.ibb.co/NrFjzyf/Logo.png" alt="" />
                         </div>
                         <div className="flex-none">
                             <ul className="menu menu-horizontal px-1">
